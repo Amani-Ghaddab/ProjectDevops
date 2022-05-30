@@ -1,0 +1,9 @@
+@Library('pipeline_library') _
+DeployDockerImages(
+    scmurl:'https://github.com/Amani-Ghaddab/AosoDevOps.git',
+    projectName:'AosoFront',
+    destinationFile:'/Aoso/DevOps/frontend',
+    dockerFileLocation:'Scripts/Front/Dockerfile',
+    dockerComposeLocation: 'Scripts/Front/docker-compose-front.yml',
+    nginxLocation:'Scripts/Front/nginx'
+)

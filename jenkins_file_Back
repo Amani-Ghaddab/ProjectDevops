@@ -1,0 +1,12 @@
+@Library('pipeline_library') _
+DeployDockerImages(
+    scmurl:'https://github.com/Amani-Ghaddab/AosoDevOps.git',
+    projectName:'AosoBack',
+    destinationFile:'/Aoso/DevOps/backend',
+    dockerFileLocation:'Scripts/Back/Dockerfile',
+    dockerComposeLocation: 'Scripts/Back/docker-compose-back.yml',
+    nginxLocation:'Scripts/Back/nginx'
+)
+// dockerBuild(
+//     dockerComposeLocation: '/Aoso/DevOps/backend/docker-compose-back.yml',
+// )
