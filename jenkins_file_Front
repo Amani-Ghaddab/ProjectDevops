@@ -1,6 +1,6 @@
 @Library('pipeline_library') _
 DeployDockerImages(
-    scmurl:'https://github.com/Amani-Ghaddab/AosoDevOps.git',
+    scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     projectName:'AosoFront',
     destinationFile:'/Aoso/DevOps/frontend',
     dockerFileLocation:'Scripts/Front/Dockerfile',
