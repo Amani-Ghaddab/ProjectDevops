@@ -4,7 +4,7 @@ DeployDockerImages(
     projectName:'AosoBack',
     destinationFile:'/srv/Aoso2/DevOps/backend',
     dockerFileLocation:'Scripts/Back/Dockerfile',
-    dockerComposeLocation: 'Scripts/Back/docker-compose-back.yml',
+    dockerComposeLocation: 'Scripts/Back/docker-compose.yml',
     nginxLocation:'Scripts/Back/nginx'
 )
 // dockerBuild(
