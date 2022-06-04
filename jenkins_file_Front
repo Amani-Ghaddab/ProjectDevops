@@ -2,8 +2,11 @@
 DeployDockerImages(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     projectName:'AosoFront',
-    destinationFile:'/Aoso/DevOps/frontend',
+    destinationFile:'/srv/Aoso/DevOps/frontend',
     dockerFileLocation:'Scripts/Front/Dockerfile',
-    dockerComposeLocation: 'Scripts/Front/docker-compose-front.yml',
-    nginxLocation:'Scripts/Front/nginx'
+    dockerComposeFileLocation: 'Scripts/Front/docker-compose-front.yml',
+    dockerComposeFileDestination: '/srv/Aoso/DevOps/frontend/docker-compose-front.yml',
+    nginxLocation:'Scripts/Front/nginx',
+    dockerComposeLocation: '/usr/local/bin',
+    containerName: 'front_jenkins'
 )
