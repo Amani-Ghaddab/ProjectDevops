@@ -2,7 +2,7 @@
 DeployDockerImages(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     projectName:'AosoBack',
-    destinationFile:'/srv/Aoso2/DevOps/backend',
+    destinationFile:'/srv/Aoso/DevOps/backend',
     dockerFileLocation:'Scripts/Back/Dockerfile',
     dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
     dockerComposeFileDestination: '/srv/Aoso/DevOps/backend/docker-compose-back.yml',
