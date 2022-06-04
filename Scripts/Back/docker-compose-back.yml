@@ -3,7 +3,7 @@
 version: '3.7'
 
 services:
-  devopsproject:
+  aosoback:
     build:
       context: ./
       dockerfile: Dockerfile
