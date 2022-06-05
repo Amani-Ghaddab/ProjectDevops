@@ -2,24 +2,23 @@ version: '3.7'
 services:
   aosofront:
     build:
-      context: ./
+      context: .
       dockerfile: Dockerfile
-    ports:
-     - "4200:4200"
+    expose:
+     - "4200"
     tty: true
     restart : always
     volumes:
-      - '.:/app'
       - ./:/var/www
     depends_on:
      - reversproxy
-    # networks:
-    #   - dev_some-et
+    networks:
+     - dev_some-et
 
    #nginx server 
   reversproxy:
     build:
-      context : ./
+      context : .
       dockerfile : nginx/Dockerfile
     volumes:
       - ./:/var/www
@@ -29,9 +28,9 @@ services:
       - "4004:80"
     tty: true
     restart : always
-#     networks:
-#       - dev_some-net
-# networks:
-#   dev_some-net:
-    
+    networks:
+      - dev_some-net
+networks:
+  dev_some-net:
+     driver: bridge
 #   #  external: true
