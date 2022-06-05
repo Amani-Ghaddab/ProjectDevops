@@ -13,7 +13,7 @@ services:
     depends_on:
      - reversproxy
     networks:
-     - dev_some-et
+     - some-net
 
    #nginx server 
   reversproxy:
@@ -29,8 +29,8 @@ services:
     tty: true
     restart : always
     networks:
-      - dev_some-net
+      - some-net
 networks:
-  dev_some-net:
+   some-net:
      driver: bridge
 #   #  external: true
