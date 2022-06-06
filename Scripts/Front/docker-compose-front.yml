@@ -16,7 +16,7 @@ services:
      - some-net
 
    #nginx server 
-  reversproxy:
+  reversproxyfront:
     build:
       context : .
       dockerfile : nginx/Dockerfile
