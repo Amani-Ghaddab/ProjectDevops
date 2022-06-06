@@ -4,7 +4,7 @@ services:
   build:
    context : .
    dockerfile : Dockerfile
-  container_name : aosoFront
+  container_name : aosofront
   volumes:
    - ./:/var/www
   expose:
