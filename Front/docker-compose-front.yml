@@ -1,29 +1,29 @@
 version: '3.7'
 services:
- aosofront:
+ partie_frontend:
   build:
    context : .
    dockerfile : Dockerfile
-  container_name : aosoFront
+  container_name : front
   volumes:
    - ./:/var/www
   expose:
    - "4200"
   depends_on:
-   - nginx_reversproxy_front
+   - nginx_proxy
   networks:
       - net
   restart : always
 
- nginx_reversproxy_front:
+ nginx_proxy:
   build:
     context : .
     dockerfile : Dockerfile
-  container_name: nginx_reversproxy_front
+  container_name: nginx_front
   volumes:
    - ./:/var/www
   ports:
-   - "4004:80"
+   - "4002:80"
   networks:
     - net
   restart : always
