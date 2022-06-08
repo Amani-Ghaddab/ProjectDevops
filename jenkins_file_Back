@@ -1,12 +1,23 @@
 @Library('pipeline_library') _
+gitCheckout(
+    scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git'
+)
+sonarQube(
+    projectName:'AosoBack',
+    SonarQubeEnv:'SonarQube',
+    SonarScannerMSBuildTool:'SonarScanner for MSBuild',
+    sonarLogin:'23b5d4c1c1f76c539f1d0019945228a4003d6a51'
+)
 DeployDockerImages(
-    scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     projectName:'AosoBack',
     destinationFile:'/srv/Aoso/DevOps/backend',
     dockerFileLocation:'Scripts/Back/Dockerfile',
     dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
+    nginxLocation:'Scripts/Back/nginx'
+ 
+)
+dockerBuild(
     dockerComposeFileDestination: '/srv/Aoso/DevOps/backend/docker-compose-back.yml',
-    nginxLocation:'Scripts/Back/nginx',
     dockerComposeLocation: '/usr/local/bin',
     containerName: 'back_jenkins'
 )
