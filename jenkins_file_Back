@@ -10,7 +10,7 @@ sonarQube(
 )
 DeployDockerImages(
     projectName:'AosoBack',
-    destinationFile:'/srv/Aoso/DevOps/backend',
+    destinationFolder:'/srv/Aoso/DevOps/backend',
     dockerFileLocation:'Scripts/Back/Dockerfile',
     dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
     nginxLocation:'Scripts/Back/nginx'
