@@ -2,7 +2,7 @@
 gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git'
 )
-sonarQube(
+sonarQubeForDotnet(
     projectName:'AosoBack',
     SonarQubeEnv:'SonarQube',
     SonarScannerMSBuildTool:'SonarScanner for MSBuild',
