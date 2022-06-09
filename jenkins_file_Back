@@ -1,7 +1,16 @@
 @Library('pipeline_library') _
 gitCheckout(
+    brancheName:'refs/heads/main',
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git'
 )
+# stage ('Unit Tests') {
+#         steps{
+#             sh '''
+#             export PATH="$PATH:/root/.dotnet/tools"            
+#             dotnet test ./WebApplication1.sln --configuration Release
+#             '''
+#             }
+#         }
 sonarQubeForDotnet(
     projectName:'AosoBack',
     SonarQubeEnv:'SonarQube',

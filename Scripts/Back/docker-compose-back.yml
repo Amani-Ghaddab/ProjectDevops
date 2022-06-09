@@ -8,16 +8,16 @@ services:
       context: ./
       dockerfile: Dockerfile
     container_name : aosoback
-    # volumes:
-    #   - ./:/var/www
+    volumes:
+      - ./:/var/www
     expose:
       - "5000"
     tty: true
     restart : always
     depends_on:
      - reversproxy
-    networks:
-      - some-net
+    # networks:
+    #   - some-net
    
    #nginx server 
   reversproxy:
@@ -32,8 +32,8 @@ services:
       - "4003:80"
     tty: true
     restart : always
-    networks:
-      - some-net
-networks:
-  some-net:
-    driver: bridge
+#     networks:
+#       - some-net
+# networks:
+#   some-net:
+#     driver: bridge
