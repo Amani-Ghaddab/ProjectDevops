@@ -3,14 +3,7 @@ gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'amani'
 )
-# stage ('Unit Tests') {
-#         steps{
-#             sh '''
-#             export PATH="$PATH:/root/.dotnet/tools"            
-#             dotnet test ./WebApplication1.sln --configuration Release
-#             '''
-#             }
-#         }
+
 sonarQubeForDotnet(
     projectName:'AosoBack',
     SonarQubeEnv:'SonarQube',
