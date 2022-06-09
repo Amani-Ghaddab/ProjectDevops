@@ -1,7 +1,7 @@
 @Library('pipeline_library') _
 gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
-    branche:'amani'
+    branche:'refs/heads/main'
 )
 
 sonarQubeForDotnet(
