@@ -2,6 +2,7 @@ properties([pipelineTriggers([githubPush()])])
 @Library('pipeline_library') _
 gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git'
+    branche:'refs/heads/main'
 )
 sonarQubeForAngular()
 DeployDockerImages(
