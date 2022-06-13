@@ -17,11 +17,3 @@ dockerBuild(
     dockerComposeLocation: '/usr/local/bin',
     containerName: 'front_jenkins'
 )
-# stage ('Unit Tests') {
-#         steps{
-#             sh '''
-#             export PATH="$PATH:/root/.dotnet/tools"            
-#             dotnet test ./WebApplication1.sln --configuration Release
-#             '''
-#             }
-#         }
