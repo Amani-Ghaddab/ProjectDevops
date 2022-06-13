@@ -4,7 +4,9 @@ gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'refs/heads/main'
 )
-sonarQubeForAngular()
+sonarQubeForAngular(
+    projectName:'AosoFront'
+)
 DeployDockerImages(
     projectName:'AosoFront',
     destinationFolder:'/srv/Aoso/DevOps/frontend',
