@@ -8,7 +8,7 @@ sonarQubeForDotnet(
     projectName:'AosoBack',
     SonarQubeEnv:'SonarQube',
     SonarScannerMSBuildTool:'SonarScanner for MSBuild',
-    sonarLogin:'23b5d4c1c1f76c539f1d0019945228a4003d6a51'
+    sonarLogin:'068c911c4f2f4ada7a013b6c6be096936c15b0a7'
 )
 DeployDockerImages(
     projectName:'AosoBack',
