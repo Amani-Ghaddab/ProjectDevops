@@ -4,9 +4,8 @@ gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'refs/heads/main'
 )
-
 sonarQubeForDotnet(
-    projectName:'AosoBack',
+    projec tName:'AosoBack2',
     SonarQubeEnv:'SonarQube',
     SonarScannerMSBuildTool:'SonarScanner for MSBuild',
     sonarLogin:'23b5d4c1c1f76c539f1d0019945228a4003d6a51'
