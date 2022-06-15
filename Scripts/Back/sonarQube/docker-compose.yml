@@ -35,4 +35,4 @@ volumes:
   sonar_data:
   sonar_extensions:
   sonar_plugins:
-  postgres_data:
+  postgres_data: 
