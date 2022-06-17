@@ -9,8 +9,7 @@ sonarQubeForAngular(
     SonarQubeEnv:'SonarQube',
     sonarLogin:'2e015a6067c1dcca9ddd46833f1e73ab14052e8d'
 )
-QualityGate(
-)
+
 DeployDockerImages(
     projectName:'AosoFront',
     destinationFolder:'/srv/Aoso/DevOps/frontend',
