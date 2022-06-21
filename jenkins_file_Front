@@ -18,8 +18,7 @@ DeployDockerImages(
     dockerComposeFileLocation: 'Scripts/Front/docker-compose-front.yml',
     nginxLocation:'Scripts/Front/nginx'
 )
-valisator(
-)
+
 dockerBuild(
     dockerComposeFileDestination: '/srv/Aoso/DevOps/frontend/docker-compose-front.yml',
     dockerComposeLocation: '/usr/local/bin',
