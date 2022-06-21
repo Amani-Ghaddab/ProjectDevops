@@ -19,6 +19,9 @@ DeployDockerImages(
     nginxLocation:'Scripts/Back/nginx'
  
 )
+validator(
+    
+)
 dockerBuild(
     dockerComposeFileDestination: '/srv/Aoso/DevOps/backend/docker-compose-back.yml',
     dockerComposeLocation: '/usr/local/bin',
