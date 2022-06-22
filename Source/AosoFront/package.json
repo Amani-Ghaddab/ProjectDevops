@@ -9,6 +9,8 @@
     "test": "ng test"
   },
   "private": true,
+  "publishConfig": { "registry": "http://localhost:8081//repository/AosoFront/"
+  },
   "dependencies": {
     "@angular/animations": "~12.1.0-",
     "@angular/common": "~12.1.0-",
