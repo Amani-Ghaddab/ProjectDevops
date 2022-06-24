@@ -9,7 +9,7 @@
     "test": "ng test"
   },
   "private": true,
-  "publishConfig": { "registry": "https://registry.npmjs.org/repository/AosoFrontProxy/"
+  "publishConfig": { "registry": "http://localhost:8081/repository/AosoFront/"
   },
   "dependencies": {
     "@angular/animations": "~12.1.0-",
