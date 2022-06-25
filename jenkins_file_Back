@@ -5,7 +5,7 @@ gitCheckout(
     branche:'refs/heads/main'
 )
 sonarQubeForDotnet(
-    projectName:'AosoBack',
+    projectName:'AosoBack2',
     SonarQubeEnv:'SonarQube',
     SonarScannerMSBuildTool:'SonarScanner for MSBuild',
     sonarLogin:'2e015a6067c1dcca9ddd46833f1e73ab14052e8d'
