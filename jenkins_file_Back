@@ -8,7 +8,7 @@ sonarQubeForDotnet(
     projectName:'AosoBack',
     SonarQubeEnv:'SonarQube',
     SonarScannerMSBuildTool:'SonarScanner for MSBuild',
-    sonarLogin:'cb4d28dbfa658df099a67936ea7fd658049db71d'
+    sonarLogin:'75b0c5e6cb1ca55264d3b98f88fbc111da2f008c'
 )
 QualityGate(
 )
