@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  db_sonar:
+  db:
     image: postgres
     environment:
       - POSTGRES_USER=sonar
