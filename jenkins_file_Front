@@ -4,6 +4,14 @@ gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'refs/heads/main'
 )
+
+sonarQubeForAngular(
+    projectName:'AosoFront',
+    SonarQubeEnv:'SonarQube',
+    sonarLogin:'cb4d28dbfa658df099a67936ea7fd658049db71d'
+)
+QualityGate(
+)
 nexusForAngular(
     
 )
