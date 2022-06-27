@@ -11,7 +11,14 @@ DeployDockerImages(
     dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
     nginxLocation:'Scripts/Back/nginx' 
 )
-
+sonarQubeForDotnet(
+    projectName:'AosoBack',
+    SonarQubeEnv:'SonarQube',
+    SonarScannerMSBuildTool:'SonarScanner for MSBuild',
+    sonarLogin:'fb8f79f3db7b0ef00c608367b4c8616b25d76484'
+)
+QualityGate(
+)
 
 nexusForDotnet(
 
