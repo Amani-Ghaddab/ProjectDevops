@@ -4,6 +4,13 @@ gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'refs/heads/main'
 )
+DeployDockerImages(
+    projectName:'AosoBack',
+    destinationFolder:'/srv/Aoso/DevOps/backend',
+    dockerFileLocation:'Scripts/Back/Dockerfile',
+    dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
+    nginxLocation:'Scripts/Back/nginx' 
+)
 sonarQubeForDotnet(
     projectName:'AosoBack',
     SonarQubeEnv:'SonarQube',
@@ -13,11 +20,11 @@ sonarQubeForDotnet(
 QualityGate(
 )
 
-DeployDockerImages(
-    projectName:'AosoBack',
-    destinationFolder:'/srv/Aoso/DevOps/backend',
-    dockerFileLocation:'Scripts/Back/Dockerfile',
-    dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
-    nginxLocation:'Scripts/Back/nginx'
- 
+nexusForDotnet(
+
+)
+dockerBuild(
+    dockerComposeFileDestination: '/srv/Aoso/DevOps/backend/docker-compose-back.yml',
+    dockerComposeLocation: '/usr/local/bin',
+    containerName: 'back_jenkins'
 )
