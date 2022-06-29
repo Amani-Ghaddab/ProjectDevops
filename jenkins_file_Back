@@ -17,13 +17,11 @@ sonarQubeForDotnet(
     SonarScannerMSBuildTool:'SonarScanner for MSBuild',
     sonarLogin:'fb8f79f3db7b0ef00c608367b4c8616b25d76484'
 )
-
-
-nexusForDotnet(
-
-)
 dockerBuild(
     dockerComposeFileDestination: '/srv/Aoso/DevOps/backend/docker-compose-back.yml',
     dockerComposeLocation: '/usr/local/bin',
-    containerName: 'back_jenkins'
+    containerName: 'back'
+)
+nexusForDotnet(
+
 )

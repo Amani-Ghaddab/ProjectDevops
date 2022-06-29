@@ -9,9 +9,6 @@
     "test": "ng test"
   },
   "private": true,
-  "publishConfig": {
-    "registry": "http://localhost:8081/repository/npm-private/"
-  },
   "dependencies": {
     "@angular/animations": "~12.1.0-",
     "@angular/common": "~12.1.0-",
