@@ -10,7 +10,7 @@ USER appuser
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
 WORKDIR /src
-COPY ["./AosoBack/DevOpsProject.csproj", "./"]
+COPY ["Source/AosoBack/DevOpsProject.csproj", "./"]
 RUN dotnet restore "DevOpsProject.csproj"
 COPY . .
 WORKDIR "/src/"
