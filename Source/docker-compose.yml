@@ -1,0 +1,32 @@
+version: '3.7'
+services:
+ aosofront:
+  build:
+   context : .
+   dockerfile : Dockerfile
+  container_name : aosofront
+  volumes:
+   - ./:/var/www
+  expose:
+   - "4200"
+  depends_on:
+   - nginx_reversproxy_front
+  networks:
+      - net
+  restart : always
+
+ nginx_reversproxy_front:
+  build:
+    context : .
+    dockerfile : Dockerfile
+  container_name: nginx_reversproxy_front
+  volumes:
+   - ./:/var/www
+  ports:
+   - "4004:80"
+  networks:
+    - net
+  restart : always
+networks:
+  net:
+    driver: bridge

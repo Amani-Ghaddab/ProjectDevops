@@ -7,8 +7,9 @@ EXPOSE 4200
 COPY AosoFront/package.json AosoFront/package-lock.json ./
 
 #COPY --from=build dist/DevOpsFront /usr/share/nginx/html
-
-#RUN npm install -g npm@8.11.0 -g @angular/cli
+RUN npm uninstall -g @angular/cli
+RUN npm cache verify
+RUN npm install -g npm@8.13.2 -g @angular/cli
 
 RUN npm install
 
