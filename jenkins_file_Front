@@ -4,7 +4,13 @@ gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'refs/heads/main'
 )
-
+DeployDockerImages(
+    projectName:'AosoFront',
+    destinationFolder:'/srv/Aoso/DevOps/frontend',
+    dockerFileLocation:'Scripts/Front/Dockerfile',
+    dockerComposeFileLocation: 'Scripts/Front/docker-compose-front.yml',
+    nginxLocation:'Scripts/Front/nginx'
+)
 sonarQubeForAngular(
     projectName:'AosoFront',
     SonarQubeEnv:'SonarQube',
@@ -14,12 +20,6 @@ sonarQubeForAngular(
 nexusForAngular(
     
 )
-DeployDockerImages(
-    projectName:'AosoFront',
-    destinationFolder:'/srv/Aoso/DevOps/frontend',
-    dockerFileLocation:'Scripts/Front/Dockerfile',
-    dockerComposeFileLocation: 'Scripts/Front/docker-compose-front.yml',
-    nginxLocation:'Scripts/Front/nginx'
-)
+
 
 
