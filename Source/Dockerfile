@@ -10,7 +10,8 @@ COPY AosoFront/package.json AosoFront/package-lock.json ./
 RUN npm uninstall -g @angular/cli
 RUN npm cache verify
 RUN npm install -g npm@8.13.2 -g @angular/cli
-
+RUN npm config rm proxy
+RUN npm config rm https-proxy
 RUN npm install
 
 COPY ./AosoFront .
