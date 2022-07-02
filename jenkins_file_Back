@@ -12,7 +12,9 @@ sonarQubeForDotnet(
 )
 QualityGate(   
 )
-
+nexusForDotnet(
+    
+)
 DeployDockerImages(
     projectName:'AosoBack',
     destinationFolder:'/srv/Aoso/DevOps/backend',
