@@ -1,5 +1,5 @@
 properties([pipelineTriggers([githubPush()])])
-@Library('pipeline_library') _
+@Library('library') _
 gitCheckout(
     scmurl:'https://github.com/Amani-Ghaddab/ProjectDevops.git',
     branche:'refs/heads/main'
