@@ -20,11 +20,3 @@ DeployDockerImages(
     dockerComposeFileLocation: 'Scripts/Back/docker-compose-back.yml',
     nginxLocation:'Scripts/Back/nginx' 
 )
-nexusForDotnet(
-    
-)
-dockerBuild(
-    dockerComposeFileDestination: '/srv/Aoso/DevOps/backend/docker-compose-back.yml',
-    dockerComposeLocation: '/usr/local/bin',
-    containerName: 'back'
-)
